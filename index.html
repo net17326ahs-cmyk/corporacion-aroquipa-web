@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Corporación Aroquipa S.A.C. - Servicios tecnológicos, desarrollo, implementación y comercialización de software.">
+  <title>Corporación Aroquipa S.A.C.</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#inicio"><span>AR</span> Corporación Aroquipa</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+      <nav id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">TECNOLOGÍA • INNOVACIÓN • SOFTWARE</p>
+          <h1>Soluciones tecnológicas para hacer crecer tu empresa.</h1>
+          <p class="hero-text">Desarrollamos, implementamos y comercializamos soluciones de software adaptadas a las necesidades de cada organización.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#servicios">Nuestros servicios</a>
+            <a class="btn secondary" href="#contacto">Solicitar información</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="screen-top"><span></span><span></span><span></span></div>
+          <div class="dashboard">
+            <div class="dash-main">
+              <small>Soluciones digitales</small>
+              <strong>Corporación Aroquipa</strong>
+              <div class="chart"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="dash-side">
+              <div>DESARROLLO <b>✓</b></div>
+              <div>IMPLEMENTACIÓN <b>✓</b></div>
+              <div>SOFTWARE <b>✓</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">SOBRE NOSOTROS</p>
+          <h2>Tecnología pensada para las necesidades reales de tu negocio.</h2>
+        </div>
+        <div>
+          <p>Corporación Aroquipa S.A.C. brinda servicios tecnológicos orientados al desarrollo, implementación y comercialización de software.</p>
+          <p>Trabajamos con una visión práctica, buscando soluciones digitales que ayuden a las empresas a mejorar sus procesos y aprovechar mejor la tecnología.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section light">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">NUESTROS SERVICIOS</p>
+          <h2>Soluciones para cada etapa de tu proyecto</h2>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">⌘</div><h3>Servicios tecnológicos</h3><p>Soluciones digitales y soporte orientados a las necesidades de empresas y organizaciones.</p></article>
+          <article class="card"><div class="icon">‹/›</div><h3>Desarrollo de software</h3><p>Diseño y desarrollo de sistemas y aplicaciones adaptadas a los procesos de cada cliente.</p></article>
+          <article class="card"><div class="icon">⚙</div><h3>Implementación</h3><p>Configuración y puesta en funcionamiento de soluciones de software para facilitar su adopción.</p></article>
+          <article class="card"><div class="icon">▣</div><h3>Comercialización</h3><p>Comercialización de soluciones de software orientadas a mejorar la gestión empresarial.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section">
+      <div class="container">
+        <div class="section-title"><p class="eyebrow">NUESTRO PROCESO</p><h2>De la necesidad a la solución</h2></div>
+        <div class="steps">
+          <div><b>01</b><h3>Analizamos</h3><p>Identificamos las necesidades y objetivos del cliente.</p></div>
+          <div><b>02</b><h3>Desarrollamos</h3><p>Construimos una solución tecnológica acorde al proyecto.</p></div>
+          <div><b>03</b><h3>Implementamos</h3><p>Configuramos y ponemos la solución en funcionamiento.</p></div>
+          <div><b>04</b><h3>Acompañamos</h3><p>Brindamos orientación para el uso de la solución.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTÁCTANOS</p>
+          <h2>Cuéntanos qué solución necesitas.</h2>
+          <p>Completa el formulario y tu solicitud será enviada al backend de la aplicación.</p>
+          <div class="contact-info">
+            <p>✉ contacto@aroquipa.com</p>
+            <p>☎ +51 000 000 000</p>
+            <p>⌖ Perú</p>
+          </div>
+        </div>
+        <form id="contactForm" class="form">
+          <label>Nombre<input name="nombre" required></label>
+          <label>Correo electrónico<input type="email" name="correo" required></label>
+          <label>Empresa<input name="empresa"></label>
+          <label>Servicio
+            <select name="servicio" required>
+              <option value="">Selecciona un servicio</option>
+              <option>Servicios tecnológicos</option>
+              <option>Desarrollo de software</option>
+              <option>Implementación</option>
+              <option>Comercialización de software</option>
+            </select>
+          </label>
+          <label>Mensaje<textarea name="mensaje" rows="5" required></textarea></label>
+          <button class="btn primary" type="submit">Enviar solicitud</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>© 2026 Corporación Aroquipa S.A.C. Todos los derechos reservados.</p>
+      <p>Desarrollo • Implementación • Software</p>
+    </div>
+  </footer>
+  <!-- CHATBOT -->
+  <div id="chatbot" class="chatbot">
+    <button id="chatToggle" class="chat-toggle" aria-label="Abrir asistente">
+      <span class="chat-icon-open">💬</span>
+      <span class="chat-icon-close">✕</span>
+    </button>
+    <div id="chatWindow" class="chat-window" hidden>
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">AR</div>
+          <div>
+            <strong>Asistente Aroquipa</strong>
+            <span class="chat-status">● En línea</span>
+          </div>
+        </div>
+        <button id="chatClose" class="chat-close" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="chatMessages" class="chat-messages">
+        <div class="chat-msg bot">
+          <span>¡Hola! Soy el asistente virtual de Corporación Aroquipa. ¿En qué puedo ayudarte hoy?</span>
+        </div>
+      </div>
+      <div id="chatTyping" class="chat-typing" hidden>
+        <span></span><span></span><span></span>
+      </div>
+      <form id="chatForm" class="chat-input-row">
+        <input id="chatInput" type="text" placeholder="Escribe tu mensaje..." autocomplete="off" required>
+        <button type="submit" class="chat-send" aria-label="Enviar">➤</button>
+      </form>
+    </div>
+  </div>
+  <!-- FIN CHATBOT -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>
