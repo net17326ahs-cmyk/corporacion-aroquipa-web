@@ -1,0 +1,9 @@
+{
+  "name": "corporacion-aroquipa-backend",
+  "version": "1.0.0",
+  "description": "Backend de Corporación Aroquipa S.A.C.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
